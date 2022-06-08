@@ -1,0 +1,5 @@
+{
+  "name": "ExamplePlugin",
+  "mainClass": "the.kis.devs.example.ExampleMain",
+  "mixinConfig": "mixins.examplePlugin.json"
+}
