@@ -7,7 +7,7 @@ gradlew setupDecompWorkspace
 ```
 gradlew build
 ```
-# how to set LavaHackk-api?
+# how to set LavaHack-API?
 ![step1](https://i.imgur.com/Zh0C5j0.png)
 ![step2](https://i.imgur.com/gblAErH.png)
 ![step3](https://i.imgur.com/EWm9mq7.png)
