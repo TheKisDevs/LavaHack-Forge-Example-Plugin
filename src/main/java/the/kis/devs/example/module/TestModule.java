@@ -1,19 +1,15 @@
 package the.kis.devs.example.module;
 
-import com.kisman.cc.features.module.Category;
-import com.kisman.cc.features.module.Module;
-import com.kisman.cc.util.chat.cubic.ChatUtility;
-import com.kisman.cc.util.render.customfont.CustomFontUtil;
-import net.minecraft.client.gui.Gui;
-import net.minecraft.network.play.client.CPacketChatMessage;
 import net.minecraftforge.client.event.RenderGameOverlayEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import the.kis.devs.api.features.module.CategoryAPI;
+import the.kis.devs.api.features.module.ModuleAPI;
 
-public class TestModule extends Module
+public class TestModule extends ModuleAPI
 {
     public TestModule()
     {
-        super("ExampleModule", "Test", Category.MISC);
+        super("ExampleModule", "Test", CategoryAPI.MISC);
     }
 
     @Override
@@ -23,7 +19,7 @@ public class TestModule extends Module
             return;
         }
 
-        ChatUtility.info().printClientModuleMessage("Enable event");
+//        ChatUtility.info().printClientModuleMessage("Enable event");
     }
 
     @Override
@@ -33,7 +29,7 @@ public class TestModule extends Module
             return;
         }
 
-        ChatUtility.info().printClientModuleMessage("Disable event");
+//        ChatUtility.info().printClientModuleMessage("Disable event");
     }
 
     @Override
@@ -43,11 +39,11 @@ public class TestModule extends Module
             return;
         }
 
-        ChatUtility.info().printClientModuleMessage("ClientTick event");
+//        ChatUtility.info().printClientModuleMessage("ClientTick event");
     }
 
     @SubscribeEvent
     public void onRender(RenderGameOverlayEvent.Text event) {
-        CustomFontUtil.drawStringWithShadow("Hello from ExampleModule!", 100, 100, -1);
+//        CustomFontUtil.drawStringWithShadow("Hello from ExampleModule!", 100, 100, -1);
     }
 }
