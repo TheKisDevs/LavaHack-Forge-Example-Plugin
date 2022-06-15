@@ -19,6 +19,7 @@ public class ExampleMain implements Plugin {
         HudModuleManagerAPI.getModules().add(testHudModule);
     }
 
+    @Override
     public void unload() {
         ModuleManagerAPI.getModules().remove(testModule);
         HudModuleManagerAPI.getModules().remove(testHudModule);

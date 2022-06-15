@@ -1,5 +1,8 @@
 {
   "name": "ExamplePlugin",
+  "displayName" : "&gExamplePlugin",
+  "version" : "v1.2",
+  "prefix" : "EP",
   "mainClass": "the.kis.devs.example.ExampleMain",
   "mixinConfig": "mixins.examplePlugin.json"
 }
