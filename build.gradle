@@ -1,10 +1,9 @@
 buildscript {
     repositories {
         mavenCentral()
-        jcenter()
         maven {
             name = 'forge'
-            url = 'http://files.minecraftforge.net/maven'
+            url = 'https://files.minecraftforge.net/maven'
         }
         maven {
             name = 'SpongePowered'
@@ -46,7 +45,10 @@ repositories {
         name = 'spongepowered-repo'
         url = 'https://repo.spongepowered.org/maven/'
     }
-    jcenter()
+    maven {
+        name = 'jitpack-repo'
+        url = 'https://jitpack.io'
+    }
 }
 
 dependencies {
@@ -56,6 +58,8 @@ dependencies {
         exclude module: 'gson'
         exclude module: 'commons-io'
     }
+
+    compile('com.github.TheKisDevs:LavaHack-Plugins-API:main-SNAPSHOT')
 }
 
 processResources {
