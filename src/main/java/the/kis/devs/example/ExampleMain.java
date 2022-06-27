@@ -9,7 +9,7 @@ import the.kis.devs.example.module.TestHudModule;
 import the.kis.devs.example.module.TestModule;
 
 @SuppressWarnings("unused")
-public class ExampleMain implements Plugin {
+public class ExampleMain extends Plugin {
     private final ModuleAPI testModule = new TestModule();
     private final HudModuleAPI testHudModule = new TestHudModule();
 

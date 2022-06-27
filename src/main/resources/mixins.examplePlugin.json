@@ -1,7 +1,7 @@
 {
   "required": true,
   "compatibilityLevel": "JAVA_8",
-  "package": "the.kis.devs.example.mixins",
+  "package": "the.kis.devs.example.mixin",
   "refmap": "mixins.examplePlugin.refmap.json",
   "mixins": []
 }
